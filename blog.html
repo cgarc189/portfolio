@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carolina's Portfolio: Explore my creative work, beauty projects, blog, and personal journey as a student and small business owner.">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN02Q30X2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZN02Q30X2T');
+</script>
+
+    
+  <title>Carolina's Portfolio :: Blog</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+  <header>
+    <div class="dot"></div>
+    <strong>Carolina’s Portfolio</strong>
+  </header>
+
+  <nav>
+    <a href="mainpage.html">HOME</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="beauty.html">BEAUTY</a>
+    <a href="blog.html">BLOG</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <div class="wrapper blog-wrapper">
+    <h1 class="blog-title">My Blog</h1>
+
+    <div class="blog-grid">
+      <!-- Autism Awareness Post 1 -->
+    <div class="blog-post">
+  <h2>Learning About Autism</h2>
+  <p>
+    Autism, or Autism Spectrum Disorder (ASD), is a condition that affects how people communicate, interact, and experience the world. Each person with autism is unique, with their own strengths, challenges, and ways of seeing life. Understanding autism can help us be more patient, supportive, and inclusive in our communities.
+  </p>
+  <p>
+    If you want to learn more about autism and how to support those on the spectrum, check out <a href="https://www.autism-society.org/" target="_blank" rel="noopener noreferrer">The Autism Society</a>. They provide helpful resources, guides, and tips for families, friends, and educators.
+  </p>
+</div>
+
+
+      <!-- Autism Awareness Post 2 -->
+      <div class="blog-post">
+        <h2>Supporting Loved Ones with Autism</h2>
+        <p>Supporting someone with autism means being patient and listening carefully. Small gestures of kindness and understanding routines can make a big difference in their daily life.</p>
+      </div>
+
+      <!-- Mental Health Post 1 -->
+      <div class="blog-post">
+        <h2>The Importance of Mental Health</h2>
+        <p>Mental health is just as important as physical health. Taking care of your mind through self-care, therapy, or talking to friends can improve overall well-being and happiness.</p>
+      </div>
+
+      <!-- Mental Health Post 2 -->
+      <div class="blog-post">
+        <h2>Managing Stress Effectively</h2>
+        <p>Stress is a normal part of life, but managing it is key. Simple habits like deep breathing, taking breaks, or practicing hobbies can help reduce anxiety and keep your mind calm.</p>
+      </div>
+     <!-- VIDEO SECTION: Managing Stress Video -->
+      <div class="blog-post">
+        <h2>Managing Stress – Video</h2>
+        <video id="stressVideo" width="100%" muted playsinline>
+          <source src="managingstress.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        </div>
+
+<script>
+  const video = document.getElementById("stressVideo");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(video);
+</script>
+
+
+    <!-- Mental Health Post 6 -->
+      <div class="blog-post">
+        <h2>Crisis Text Line</h2>
+        <p>If talking feels too hard, you can text instead.
+Just text HOME to 741741 and chat with a trained volunteer.
+They can help you calm down, breathe, and figure out your next steps.
+Sometimes typing your thoughts feels easier than saying them out loud.</p>
+      </div>
+</div>
+    </div>
+
+    
+  <footer>
+    ©2025 CAROLINA’S PORTFOLIO<br><a href="mailto:carolinagar189@gmail.com">carolinagar189@gmail.com</a>
+
+  </footer>
+</body>
+</html>
